@@ -27,7 +27,10 @@ builder.WebHost.UseUrls("http://localhost:5000");
 var MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
 // Ajout du service de contexte de base de données avec une injection de dépendances de portée pool
 builder.Services.AddDbContext<TriTrainContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("ConnectionString")));
+    options.UseMySql(
+        builder.Configuration.GetConnectionString("ConnectionString"),
+        ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("ConnectionString"))
+    ));
 
 builder.Services.AddControllersWithViews()
     .AddJsonOptions(options => options.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
