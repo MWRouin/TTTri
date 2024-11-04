@@ -1,0 +1,10 @@
+export enum CategorieActionTypes {
+
+  API_RESPONSE_SUCCESS = '@@categorie/API_RESPONSE_SUCCESS',
+  API_RESPONSE_ERROR = '@@categorie/API_RESPONSE_ERROR',
+  Get_ALL_CATEGORIE = '@@categorie/Get_ALL_CATEGORIE',
+  Get_BY_ID_CATEGORIE = '@@categorie/Get_BY_ID_CATEGORIE',
+  UPDATE_CATEGORIE = '@@categorie/UPDATE_CATEGORIE',
+  DELETE_CATEGORIE = '@@categorie/DELETE_CATEGORIE',
+  CREATE_CATEGORIE = '@@categorie/CREATE_CATEGORIE',
+}

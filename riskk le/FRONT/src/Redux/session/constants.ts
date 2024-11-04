@@ -1,0 +1,12 @@
+export enum SessionActionTypes {
+
+    API_RESPONSE_SUCCESS = '@@session/API_RESPONSE_SUCCESS',
+    API_RESPONSE_ERROR = '@@session/API_RESPONSE_ERROR',
+
+    GET_ALL_SESSIONS = '@@session/GET_ALL_SESSIONS',
+    GET_BY_ID_SESSION = '@@session/GET_BY_ID_SESSION',
+    UPDATE_SESSION = '@@session/UPDATE_SESSION',
+    DELETE_SESSION = '@@session/DELETE_SESSION',
+    CREATE_SESSION = '@@session/CREATE_SESSION',
+    UPLOAD_SESSION_FILE = '@@session/UPLOAD_SESSION_FILE',
+}
